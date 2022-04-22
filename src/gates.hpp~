@@ -1,0 +1,31 @@
+
+#ifndef GATES_HPP
+#define GATES_HPP
+
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+template<typename Base, typename T>
+inline bool instanceof(const T*) {
+    return std::is_base_of<Base, T>::value;
+}
+
+class Gate{
+protected:
+    string gate_name;
+public:
+    virtual ~Gate() {}
+    virtual void empileGates() = 0;
+    //virtual string toString() const = 0;
+    virtual bool eval() const = 0;
+    string getName() const { return gate_name;};
+};
+
+ostream &operator<<(ostream &out, const Gate* g) {
+    out << g->getName();
+    return out;
+}
+
+#endif //UNTITLED1_GATES_HPP

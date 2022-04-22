@@ -1,0 +1,15 @@
+Running
+  1.Run the command make
+  2.Run the command ./main to execute the project
+
+Usage
+  The main.cpp file provides guilded tests to demonstrate the circuits simulation
+
+Displaying a circuit
+  To display a circuit in text expression you can call the method toExpr() from an OutputGate
+  To display a circuit graphically you can call the method plot() from an OutputGate
+  
+Saving a circuit and read inputfile
+  To save a circuit in a text file you can all the method saveToFile() from an OutputGate
+  You can create an OutputGate from an input file that has saved a circuit by calling the function readFile
+  

@@ -1,0 +1,4 @@
+#include "gate.hpp"
+
+Gate::~Gate() = default;
+

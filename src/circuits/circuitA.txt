@@ -1,0 +1,20 @@
+Textual expression of circuit : 
+A can be translated into the following text:
+A=AND(NOT(NOR(c,a)),XOR(OR(a,b),NAND(a,b)))
+
+A's 2D representation !!!!!
+                A:0                 
+                AND                 
+                 |                  
+         *****************          
+         |               |          
+        NOT             XOR         
+         |               |          
+         |           *********      
+         |           |       |      
+        NOR         OR_    NAND_    
+         |           |       |      
+       *****       *****   *****    
+       |   |       |   |   |   |    
+      c:0 a:0     a:0 b:0 a:0 b:0   
+                                    
